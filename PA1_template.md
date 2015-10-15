@@ -69,7 +69,11 @@ The interval with the highest average steps is interval 835.
 
 ## Imputing missing values
 
-Start with counting the number of NA values in the dataset.
+Start with counting the number of NA values in the dataset.  The approach to 
+filling in the NA values will be to use the mean steps per daily interval which 
+is already known from the above exercise.  The for loop will step through each 
+row and if an NA is found it will identify the interval and then grab the mean 
+interval and replace.
 
 
 ```r
